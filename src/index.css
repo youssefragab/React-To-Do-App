@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+label {
+  float: right;
+  margin: 0;
+}
+label span {
+  padding: 0 !important;
+  padding-right: 15px !important;
+}
+.collection-item span {
+  font-size: 15pt;
+  color:#333
+}
+[type="checkbox"]+span:not(.lever) {
+  height:12px !important
+}
+.collection-item {
+  padding: 20px 30px !important;
+}
+.todo-app h2 {
+  margin-bottom: 35px;
+}
