@@ -9,7 +9,7 @@ function todos({todos, deleteItem, setCheckMark}) {
             }
             return(
                 <div className="collection-item" key={item.id}>
-                    <span onClick={() => {deleteItem(item.id)}}>{item.title}</span>
+                    <span>{item.title} <b onClick={() => {deleteItem(item.id)}}>(remove)</b></span>
                     <label>
                         <input onClick={() => {setCheckMark(item.id)}} type="checkbox" class="filled-in" checked={checked} />
                         <span></span>
@@ -18,10 +18,10 @@ function todos({todos, deleteItem, setCheckMark}) {
             );
         })
     ) : (
-        <p className="center">You have no todo's left, yay!</p>
+        <p className="center no-todos-text">You have no todo's left, yay!</p>
     ); 
     return(
-        <div className="todos collection">
+        <div className="todos collection container">
             {todosList}
         </div>
     );

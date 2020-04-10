@@ -32,3 +32,36 @@ label span {
 .todo-app h2 {
   margin-bottom: 35px;
 }
+.no-todos-text {
+  font-size: 14pt;
+}
+nav {
+  background: #2196F3 !important;
+}
+nav .brand-logo {
+  padding: 0px 20px;
+}
+.about-text {
+  font-size: 14pt;
+}
+.add-new-label {
+  color: gray;
+  font-size: 14pt;
+  padding: 15px 0px;
+  padding-top: 35px;
+  float: left;
+
+}
+.add-new-field {
+  border: 1px solid rgba(0,0,0,0.25) !important;
+    border-radius: 4px!important;
+    padding: 8px 15px!important;
+    box-sizing: border-box;
+    width: 100%;
+}
+.collection-item span b {
+  color:gray;
+  font-weight: normal;
+  font-size: 12pt;
+  cursor: pointer;
+}
